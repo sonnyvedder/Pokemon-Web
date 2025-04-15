@@ -5,7 +5,12 @@ import { useRouter } from 'next/navigation';
 import { getPokemonDetail } from '@/services/pokemonService';
 import { Pokemon } from '@/types/pokemon';
 
-export default function PokemonDetail({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export default function PokemonDetail({ params, searchParams }: PageProps) {
   const router = useRouter();
   const [pokemon, setPokemon] = useState<Pokemon | null>(null);
   const [activeTab, setActiveTab] = useState('about');
