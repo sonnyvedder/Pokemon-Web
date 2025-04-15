@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { getPokemonDetail } from '@/services/pokemonService';
 import { Pokemon } from '@/types/pokemon';
-import { motion } from 'framer-motion';
 
 export default function PokemonDetail({ params }: { params: { id: string } }) {
   const router = useRouter();
