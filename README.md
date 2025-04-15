@@ -28,7 +28,9 @@ npm install
 ```bash
 npm run dev
 ```
+3. Open your browser and visit Open your browser and visit URL_ADDRESS:3000.
 
+## Project Structure
 3. Project Structure
 ```bash
 pokemonweb/
@@ -40,5 +42,3 @@ pokemonweb/
 ├── public/           # Static files
 └── tailwind.config.js
 ```
-
-4.
