@@ -12,7 +12,7 @@ A modern web application built with Next.js that displays Pokémon information u
 
 ## Tech Stack
 
-- Next.js 13+
+- Next.js 15+
 - TypeScript
 - Tailwind CSS
 - Framer Motion
