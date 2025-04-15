@@ -10,7 +10,7 @@ interface PageProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function PokemonDetail({ params, searchParams }: PageProps) {
+export default function PokemonDetail({ params }: PageProps) {
   const router = useRouter();
   const [pokemon, setPokemon] = useState<Pokemon | null>(null);
   const [activeTab, setActiveTab] = useState('about');
